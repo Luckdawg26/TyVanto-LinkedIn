@@ -14,6 +14,7 @@ const inquirySchema = z.object({
   email: z.string().trim().email().max(254),
   company: z.string().trim().min(2).max(120),
   role: z.string().trim().max(100).optional().default(""),
+  phone: z.string().trim().max(40).optional().default(""),
   topic: z.enum([
     "Close & reporting",
     "Forecasting & cash",
@@ -27,6 +28,37 @@ const inquirySchema = z.object({
 });
 
 const compact = (value: string) => value.replace(/\s+/g, " ").trim();
+const LEAD_RECIPIENT = "mark@midatlanticcfo.com";
+
+async function sendLeadEmail(inquiry: z.infer<typeof inquirySchema>, content: string) {
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.LEAD_EMAIL_FROM;
+  if (!apiKey || !from) throw new Error("Transactional email is not configured");
+
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from,
+      to: [LEAD_RECIPIENT],
+      reply_to: inquiry.email,
+      subject: `[Lucky CFO Advisory] CFO Readiness Call — ${compact(inquiry.company)}`,
+      text: `New Lucky CFO Advisory CFO Readiness Call request\n\n${content}\n\nReply to this email to respond directly to the potential client.`,
+      tags: [
+        { name: "source", value: "lucky-cfo-advisory" },
+        { name: "type", value: "readiness-call-lead" },
+      ],
+    }),
+  });
+
+  if (!response.ok) {
+    const detail = (await response.text()).slice(0, 500);
+    throw new Error(`Transactional email was not accepted (${response.status}): ${detail}`);
+  }
+}
 
 async function notifyOwner(content: string) {
   const apiUrl = process.env.MANUS_API_URL;
@@ -71,16 +103,24 @@ async function startServer() {
       `Email: ${compact(inquiry.email)}`,
       `Company: ${compact(inquiry.company)}`,
       `Role: ${compact(inquiry.role) || "Not provided"}`,
+      `Phone: ${compact(inquiry.phone) || "Not provided"}`,
       `Topic: ${inquiry.topic}`,
       `Context: ${compact(inquiry.message) || "Not provided"}`,
     ].join("\n");
 
     try {
-      await notifyOwner(content);
+      await sendLeadEmail(inquiry, content);
     } catch (error) {
       // Avoid exposing service internals or lead content to the visitor.
-      console.error("Inquiry notification failed:", error instanceof Error ? error.message : "Unknown error");
+      console.error("Inquiry email delivery failed:", error instanceof Error ? error.message : "Unknown error");
       return res.status(503).json({ error: "The inquiry could not be delivered. Please try again shortly." });
+    }
+
+    // This internal notification supplements, but does not replace, the inbox delivery.
+    try {
+      await notifyOwner(content);
+    } catch (error) {
+      console.error("Inquiry owner notification failed:", error instanceof Error ? error.message : "Unknown error");
     }
 
     return res.status(202).json({ accepted: true });

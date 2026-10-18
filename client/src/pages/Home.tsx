@@ -297,6 +297,7 @@ export default function Home() {
               <label>Work email<input name="email" type="email" autoComplete="email" required placeholder="you@company.com" /></label>
               <label>Company<input name="company" autoComplete="organization" required placeholder="Company name" /></label>
               <label>Role<input name="role" autoComplete="organization-title" placeholder="CEO, board member, CFO…" /></label>
+              <label className="phone-field">Phone number <small>Optional</small><input name="phone" type="tel" autoComplete="tel" inputMode="tel" maxLength={40} placeholder="(555) 123-4567" /></label>
             </div>
             <label>What needs to be ready?
               <select name="topic" required defaultValue="">

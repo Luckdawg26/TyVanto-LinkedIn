@@ -1,5 +1,9 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [ ] **Deliver booked-call requests to the firm inbox.** Send each successfully submitted CFO Readiness Call request to `mark@midatlanticcfo.com` through a verified transactional-email sender; make the prospect email the Reply-To address, keep the recipient server-side, and show success only after the email provider accepts the request.
+
+- [x] **Capture a prospect phone number.** Add an optional Phone number field to the CFO Readiness Call request form, optimize it for mobile number entry, and include the submitted value in the secure lead-notification details.
+
 - [x] **Create a distinctive Lucky CFO Advisory identity.** Replace all CFO Signal Room naming with Lucky CFO Advisory; introduce an original logo mark, a polished wordmark treatment, and a cohesive emerald-and-gold financial-advisory brand system that feels premium, credible, and prepared rather than gimmicky.
 
 - [x] **Make customer acquisition the homepage’s central job.** Reframe the opening promise and content hierarchy around CFO readiness for growth, cash, financing, board, and transaction moments. Use a decisive primary CTA to book a confidential 25-minute CFO Readiness Call, an additional diagnostic/scorecard-style conversion hook, clear social-proof framing, and repeated low-friction calls to action that lead to the qualified inquiry form.
