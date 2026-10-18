@@ -20,8 +20,19 @@ export async function setupVite(app: Express, server: Server) {
     appType: "custom",
   });
 
+  // This site declares only `/` as a browser page. Let Vite serve known assets,
+  // but do not let its development middleware turn an unknown page into a soft 404.
+  app.use((req, res, next) => {
+    if (req.method === "GET" && req.path !== "/" && !req.path.includes(".")) {
+      return res.status(404).type("text/plain").send("Not found");
+    }
+    next();
+  });
   app.use(vite.middlewares);
   app.use("*", async (req, res, next) => {
+    if (req.method !== "GET" || req.path !== "/") {
+      return res.status(404).type("text/plain").send("Not found");
+    }
     const url = req.originalUrl;
 
     try {
@@ -60,8 +71,11 @@ export function serveStatic(app: Express) {
 
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // This one-page site serves the application shell only at its declared route.
+  app.use("*", (req, res) => {
+    if (req.method === "GET" && req.path === "/") {
+      return res.sendFile(path.resolve(distPath, "index.html"));
+    }
+    return res.status(404).type("text/plain").send("Not found");
   });
 }
