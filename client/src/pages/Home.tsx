@@ -19,19 +19,20 @@ import {
   X,
 } from "lucide-react";
 
-const heroImage = "/manus-storage/decision-ready-hero_da5ec813.jpg";
-const systemImage = "/manus-storage/signal-system_e70ceae9.jpg";
+const heroImage = "/manus-storage/lucky-cfo-hero_67a18428.jpg";
+const systemImage = "/manus-storage/lucky-cfo-system_cbcd4b3e.jpg";
+const logoMark = "/manus-storage/lucky-cfo-mark_8b5d859e.png";
 
 const services = [
   {
     number: "01",
-    title: "Decision-ready close & reporting",
+    title: "Board-ready close & reporting",
     copy: "A close that produces trusted management truth—not just an earlier calendar date.",
     icon: Layers3,
   },
   {
     number: "02",
-    title: "Forecasting & cash discipline",
+    title: "Cash & forecast confidence",
     copy: "Clear drivers, credible scenarios, and weekly visibility before cash becomes the headline.",
     icon: Landmark,
   },
@@ -43,7 +44,7 @@ const services = [
   },
   {
     number: "04",
-    title: "Financing readiness",
+    title: "Capital & financing readiness",
     copy: "Internal analysis and decision support so management can evaluate capital options from a position of clarity.",
     icon: Scale,
   },
@@ -56,10 +57,10 @@ const services = [
 ];
 
 const signals = [
-  "The close is fast, but management still waits for answers.",
-  "Cash is visible only after it becomes urgent.",
-  "The board asks for more detail because the operating story is unclear.",
-  "A financing or transaction event is approaching without a finance readiness plan.",
+  "The business is growing, but finance still reports the past more clearly than it predicts the future.",
+  "Cash becomes visible only after it becomes urgent.",
+  "The board asks for more detail because the management story is not decision-ready.",
+  "Capital or a transaction is on the horizon without a finance readiness plan.",
 ];
 
 const fitProfiles = [
@@ -69,13 +70,9 @@ const fitProfiles = [
   "A growing or sponsor-backed company needs a reporting reset, finance roadmap, or senior operating partner.",
 ];
 
-function SignalMark() {
+function BrandMark() {
   return (
-    <span className="signal-mark" aria-hidden="true">
-      <span />
-      <span />
-      <span />
-    </span>
+    <img className="brand-mark" src={logoMark} alt="" aria-hidden="true" />
   );
 }
 
@@ -112,11 +109,11 @@ export default function Home() {
   return (
     <div className="signal-site">
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="The CFO Signal Room home">
-          <SignalMark />
+        <a className="brand" href="#top" aria-label="Lucky CFO Advisory home">
+          <BrandMark />
           <span>
-            <strong>The CFO</strong>
-            <em>Signal Room</em>
+            <strong>Lucky CFO</strong>
+            <em>Advisory</em>
           </span>
         </a>
 
@@ -131,11 +128,11 @@ export default function Home() {
         </button>
 
         <nav className={`nav-links ${menuOpen ? "is-open" : ""}`} aria-label="Primary navigation">
-          <a href="#services" onClick={() => setMenuOpen(false)}>Advisory</a>
-          <a href="#perspective" onClick={() => setMenuOpen(false)}>Perspective</a>
-          <a href="#process" onClick={() => setMenuOpen(false)}>Process</a>
+          <a href="#readiness" onClick={() => setMenuOpen(false)}>Readiness check</a>
+          <a href="#services" onClick={() => setMenuOpen(false)}>How I help</a>
+          <a href="#process" onClick={() => setMenuOpen(false)}>Start here</a>
           <a href="#contact" className="nav-cta" onClick={() => setMenuOpen(false)}>
-            Request a conversation <ArrowUpRight size={15} />
+            Book a CFO call <ArrowUpRight size={15} />
           </a>
         </nav>
       </header>
@@ -143,17 +140,17 @@ export default function Home() {
       <main id="top">
         <section className="hero section-shell" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow"><span /> CFO-led advisory for consequential moments</p>
-            <h1 id="hero-title">Decision-ready finance <i>before</i> the decision becomes urgent.</h1>
+            <p className="eyebrow"><span /> Fractional CFO + finance-readiness advisory</p>
+            <h1 id="hero-title">Be ready when the opportunity <i>shows up.</i></h1>
             <p className="hero-intro">
-              The CFO Signal Room helps leadership teams turn close, reporting, cash, and forecasts into an operating advantage—without requiring a full-time CFO.
+              Lucky CFO Advisory gives CEOs, boards, and operators senior CFO judgment to turn finance into a decision advantage—before growth, financing, or a transaction puts it under the microscope.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#contact">
-                Request a 25-minute readiness conversation <ArrowRight size={17} />
+                Book a 25-minute CFO Readiness Call <ArrowRight size={17} />
               </a>
-              <a className="text-link" href="#perspective">
-                See the operating perspective <ChevronRight size={16} />
+              <a className="text-link" href="#readiness">
+                Take the 3-question readiness check <ChevronRight size={16} />
               </a>
             </div>
             <div className="hero-proof" aria-label="Practice credentials">
@@ -163,25 +160,42 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <img src={heroImage} alt="Abstract navy and amber decision grid" />
+            <img src={heroImage} alt="Abstract evergreen and gold path toward a prepared opportunity" />
             <div className="hero-visual-caption">
-              <span>Signal</span><span>System</span><span>Decision</span>
+              <span>Prepare</span><span>Decide</span><span>Move</span>
             </div>
           </div>
         </section>
 
         <section className="marquee-strip" aria-label="Core advisory focus">
           <div className="marquee-content">
-            <span>Close</span><b>·</b><span>Reporting</span><b>·</b><span>Forecasting</span><b>·</b><span>Cash discipline</span><b>·</b><span>Transaction readiness</span>
+            <span>Growth</span><b>·</b><span>Cash</span><b>·</b><span>Board confidence</span><b>·</b><span>Capital</span><b>·</b><span>Transaction readiness</span>
+          </div>
+        </section>
+
+        <section className="section-shell readiness-section" id="readiness" aria-labelledby="readiness-title">
+          <div className="readiness-copy">
+            <p className="eyebrow"><span /> A better first conversation</p>
+            <h2 id="readiness-title">How prepared is your finance function for the next break?</h2>
+            <p>Before a call, pressure-test the few questions that determine whether management can move with confidence instead of scrambling for answers.</p>
+          </div>
+          <div className="readiness-card">
+            <span className="card-kicker">The CFO Readiness Check</span>
+            <ol>
+              <li><span>01</span><p>Can management explain the current month through the three drivers that matter most?</p></li>
+              <li><span>02</span><p>Can the team see a credible 13-week cash view—and the assumptions behind it?</p></li>
+              <li><span>03</span><p>Could you put a lender, buyer, or board-quality finance package together in ten business days?</p></li>
+            </ol>
+            <a className="button button-primary" href="#contact">If one is a no, book the call <ArrowRight size={17} /></a>
           </div>
         </section>
 
         <section className="section-shell signal-section" aria-labelledby="signals-title">
-          <div className="section-label"><span>01</span><p>The early signals</p></div>
+          <div className="section-label"><span>01</span><p>The opportunity gap</p></div>
           <div className="signal-layout">
             <div>
-              <h2 id="signals-title">Finance usually fails the test <i>after</i> the pressure arrives.</h2>
-              <p className="section-lead">The issue is rarely a lack of effort. It is a finance operating system that does not make ownership, uncertainty, and decision trade-offs visible soon enough.</p>
+              <h2 id="signals-title">When readiness is missing, every good break gets <i>more expensive.</i></h2>
+              <p className="section-lead">The issue is rarely effort. It is a finance operating system that does not make ownership, uncertainty, and trade-offs visible before the next consequential decision.</p>
             </div>
             <ul className="signal-list">
               {signals.map((signal, index) => (
@@ -194,25 +208,25 @@ export default function Home() {
         <section className="section-shell perspective-section" id="perspective" aria-labelledby="perspective-title">
           <div className="system-visual-wrap">
             <img src={systemImage} alt="Abstract layered structure representing a finance operating system" />
-            <div className="system-stamp"><Sparkles size={15} /><span>Operating<br />finance</span></div>
+            <div className="system-stamp"><Sparkles size={15} /><span>Prepared<br />wins</span></div>
           </div>
           <div className="perspective-copy">
-            <div className="section-label"><span>02</span><p>The operating perspective</p></div>
-            <h2 id="perspective-title">A finance function should produce a reliable <i>decision</i>, not just a report.</h2>
-            <p>After 25 years in CFO roles, the pattern is clear: the most valuable finance work happens before the board meeting, the lender question, or the diligence request. It happens in the cadence, controls, ownership, forecasts, and decision papers that make the business legible.</p>
+            <div className="section-label"><span>02</span><p>The Lucky CFO point of view</p></div>
+            <h2 id="perspective-title">Luck is a story. Readiness is an <i>operating system.</i></h2>
+            <p>After 25 years in CFO roles, the pattern is clear: the valuable work happens before the board meeting, lender question, or diligence request. It lives in the cadence, controls, ownership, forecasts, and decision papers that make the business legible.</p>
             <div className="three-lens">
-              <article><span>Signal</span><p>What a senior CFO notices early.</p></article>
-              <article><span>System</span><p>The mechanism that creates—or corrects—it.</p></article>
-              <article><span>Decision</span><p>The implication for leadership and the board.</p></article>
+              <article><span>See it early</span><p>Notice the operating signals before the pressure is public.</p></article>
+              <article><span>Fix the system</span><p>Build the cadence, controls, and accountability to move faster.</p></article>
+              <article><span>Move with confidence</span><p>Give leadership and the board a decision they can stand behind.</p></article>
             </div>
           </div>
         </section>
 
         <section className="section-shell services-section" id="services" aria-labelledby="services-title">
           <div className="services-heading">
-            <div className="section-label"><span>03</span><p>Advisory capabilities</p></div>
-            <h2 id="services-title">Built for the moments when the numbers have to carry more weight.</h2>
-            <p>Each mandate starts with the business decision at stake, then defines the finance work required to make that decision credible.</p>
+            <div className="section-label"><span>03</span><p>Where Lucky CFO helps</p></div>
+            <h2 id="services-title">Bring in senior CFO judgment where the stakes are rising.</h2>
+            <p>Each engagement starts with the business decision ahead, then defines the finance work needed to make that decision credible.</p>
           </div>
           <div className="service-stack">
             {services.map(({ number, title, copy, icon: Icon }) => (
@@ -230,13 +244,13 @@ export default function Home() {
 
         <section className="section-shell process-section" id="process" aria-labelledby="process-title">
           <div className="process-intro">
-            <div className="section-label"><span>04</span><p>How an engagement begins</p></div>
-            <h2 id="process-title">Make the next step useful <i>before</i> it becomes a proposal.</h2>
-            <p>There is no generic discovery call. The process is designed to establish the decision, the friction, and the right level of CFO involvement.</p>
-            <a className="button button-quiet" href="#contact">Start with a readiness conversation <ArrowRight size={17} /></a>
+            <div className="section-label"><span>04</span><p>How to start</p></div>
+            <h2 id="process-title">Book a CFO Readiness Call. Leave with a better <i>next move.</i></h2>
+            <p>There is no generic discovery call. The first conversation identifies the decision, the friction, and whether senior CFO involvement can create material traction.</p>
+            <a className="button button-quiet" href="#contact">Book the CFO Readiness Call <ArrowRight size={17} /></a>
           </div>
           <ol className="process-steps">
-            <li><span>01</span><div><h3>Finance Readiness Conversation</h3><p>A confidential 25-minute outside perspective on the first questions worth testing.</p></div><CalendarDays size={22} /></li>
+            <li><span>01</span><div><h3>CFO Readiness Call</h3><p>A confidential 25-minute outside perspective on the first questions worth testing.</p></div><CalendarDays size={22} /></li>
             <li><span>02</span><div><h3>Focused diagnostic</h3><p>Review the close, reporting, forecast, cash, controls, and finance operating cadence.</p></div><MessagesSquare size={22} /></li>
             <li><span>03</span><div><h3>Prioritized roadmap</h3><p>Convert observed friction into a clear 90-day sequence, decision map, and service recommendation.</p></div><Check size={22} /></li>
             <li><span>04</span><div><h3>Advisory execution</h3><p>Support the team through a defined upgrade, fractional-CFO mandate, or readiness sprint.</p></div><ArrowUpRight size={22} /></li>
@@ -247,8 +261,8 @@ export default function Home() {
           <div className="fit-panel">
             <div className="fit-copy">
               <div className="section-label"><span>05</span><p>Best fit</p></div>
-              <h2 id="fit-title">For leaders who know the finance function has to become more useful <i>now</i>.</h2>
-              <p>The right clients are not looking for more activity. They are preparing for a consequential operating, board, lending, growth, or transaction moment.</p>
+              <h2 id="fit-title">Growth, cash, capital, transaction—get CFO help <i>before</i> the pressure does.</h2>
+              <p>The right clients are not looking for more finance activity. They are preparing for a consequential operating, board, lending, growth, or transaction moment.</p>
             </div>
             <ul>
               {fitProfiles.map((profile) => <li key={profile}><Check size={17} /><span>{profile}</span></li>)}
@@ -258,14 +272,14 @@ export default function Home() {
 
         <section className="section-shell field-notes" aria-labelledby="notes-title">
           <div className="notes-copy">
-            <p className="eyebrow"><span /> The CFO Signal Room</p>
-            <h2 id="notes-title">Executive finance field notes—built for the week before the hard question.</h2>
+            <p className="eyebrow"><span /> The Lucky CFO Brief</p>
+            <h2 id="notes-title">Practical finance insights for the week before the hard question.</h2>
             <p>Follow the point of view through practical LinkedIn posts and concise video notes on close quality, board confidence, forecast credibility, cash, and deal readiness.</p>
-            <a href="#contact" className="text-link">Ask to receive the first field note <ChevronRight size={16} /></a>
+            <a href="#contact" className="text-link">Ask for the first CFO Brief <ChevronRight size={16} /></a>
           </div>
           <div className="video-card">
-            <div className="video-top"><span>Video field note / 01</span><PlayCircle size={22} /></div>
-            <blockquote>“A three-day close that creates ten days of cleanup is not a three-day close.”</blockquote>
+            <div className="video-top"><span>CFO Brief / 01</span><PlayCircle size={22} /></div>
+            <blockquote>“Prepared beats lucky when the board asks the hard question.”</blockquote>
             <div className="video-meta"><span>Fast close or trusted close?</span><ArrowUpRight size={17} /></div>
           </div>
         </section>
@@ -273,8 +287,8 @@ export default function Home() {
         <section className="section-shell contact-section" id="contact" aria-labelledby="contact-title">
           <div className="contact-intro">
             <p className="eyebrow"><span /> Private by design</p>
-            <h2 id="contact-title">Request a Finance Readiness Conversation.</h2>
-            <p>Bring the operating context, not confidential deal material. The first conversation is a focused 25 minutes to clarify what is happening, what decision is approaching, and whether an outside CFO perspective would be useful.</p>
+            <h2 id="contact-title">Make your next move a prepared one.</h2>
+            <p>Bring the operating context, not confidential deal material. The CFO Readiness Call is a focused 25 minutes to clarify the decision ahead, the finance pressure point, and whether an outside CFO perspective can help.</p>
             <div className="contact-assurances"><span><LockKeyhole size={16} /> No confidential deal details requested</span><span><ShieldCheck size={16} /> No placement or finder activity</span></div>
           </div>
           <form className="inquiry-form" onSubmit={handleInquiry}>
@@ -284,7 +298,7 @@ export default function Home() {
               <label>Company<input name="company" autoComplete="organization" required placeholder="Company name" /></label>
               <label>Role<input name="role" autoComplete="organization-title" placeholder="CEO, board member, CFO…" /></label>
             </div>
-            <label>What is driving the conversation?
+            <label>What needs to be ready?
               <select name="topic" required defaultValue="">
                 <option value="" disabled>Select the most relevant moment</option>
                 <option value="Close & reporting">Close & reporting</option>
@@ -295,13 +309,13 @@ export default function Home() {
                 <option value="Other finance operating need">Other finance operating need</option>
               </select>
             </label>
-            <label>Brief context <small>Please do not include confidential deal information.</small><textarea name="message" rows={4} maxLength={800} placeholder="What finance decision, pressure point, or operating moment is approaching?" /></label>
+            <label>Brief context <small>Please do not include confidential deal information.</small><textarea name="message" rows={4} maxLength={800} placeholder="What opportunity, pressure point, or finance moment is approaching?" /></label>
             <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
             <button className="button button-primary form-submit" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending inquiry…" : "Request the conversation"} <Send size={16} />
+              {isSubmitting ? "Sending request…" : "Book the CFO Readiness Call"} <Send size={16} />
             </button>
             <div className="form-message-region" role="status" aria-live="polite">
-              {formStatus === "success" && <p className="form-message success">Thank you. Your request has been received; we will follow up to coordinate a focused conversation.</p>}
+              {formStatus === "success" && <p className="form-message success">Thank you. Your request has been received; we will follow up to coordinate a focused CFO Readiness Call.</p>}
               {formStatus === "error" && <p className="form-message error">The request did not go through, so your details were not submitted. Please try again in a moment.</p>}
             </div>
           </form>
@@ -309,10 +323,10 @@ export default function Home() {
       </main>
 
       <footer className="site-footer section-shell">
-        <div className="footer-brand"><SignalMark /><span><strong>The CFO</strong> Signal Room</span></div>
-        <p>Decision-ready finance for consequential moments.</p>
+        <div className="footer-brand"><BrandMark /><span><strong>Lucky CFO</strong> Advisory</span></div>
+        <p>Prepared finance for consequential moments.</p>
         <p className="footer-boundary">Advisory only. No legal, tax, attest, broker-dealer, placement-agent, or investment-adviser services.</p>
-        <p className="copyright">© {new Date().getFullYear()} The CFO Signal Room</p>
+        <p className="copyright">© {new Date().getFullYear()} Lucky CFO Advisory</p>
       </footer>
     </div>
   );

@@ -23,7 +23,8 @@ export async function setupVite(app: Express, server: Server) {
   // This site declares only `/` as a browser page. Let Vite serve known assets,
   // but do not let its development middleware turn an unknown page into a soft 404.
   app.use((req, res, next) => {
-    if (req.method === "GET" && req.path !== "/" && !req.path.includes(".")) {
+    const viteInternalPath = req.path.startsWith("/@vite/") || req.path.startsWith("/@fs/") || req.path === "/@react-refresh";
+    if (req.method === "GET" && req.path !== "/" && !req.path.includes(".") && !viteInternalPath) {
       return res.status(404).type("text/plain").send("Not found");
     }
     next();

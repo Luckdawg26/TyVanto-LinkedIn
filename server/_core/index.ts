@@ -40,7 +40,7 @@ async function notifyOwner(content: string) {
       "Content-Type": "application/json",
       "connect-protocol-version": "1",
     },
-    body: JSON.stringify({ title: "New Finance Readiness Conversation request", content }),
+    body: JSON.stringify({ title: "New Lucky CFO Advisory readiness call request", content }),
   });
 
   if (!response.ok) throw new Error(`Owner notification was not accepted (${response.status})`);

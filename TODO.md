@@ -1,4 +1,10 @@
-# The CFO Signal Room — Build Outcomes
+# Lucky CFO Advisory — Build Outcomes
+
+- [x] **Create a distinctive Lucky CFO Advisory identity.** Replace all CFO Signal Room naming with Lucky CFO Advisory; introduce an original logo mark, a polished wordmark treatment, and a cohesive emerald-and-gold financial-advisory brand system that feels premium, credible, and prepared rather than gimmicky.
+
+- [x] **Make customer acquisition the homepage’s central job.** Reframe the opening promise and content hierarchy around CFO readiness for growth, cash, financing, board, and transaction moments. Use a decisive primary CTA to book a confidential 25-minute CFO Readiness Call, an additional diagnostic/scorecard-style conversion hook, clear social-proof framing, and repeated low-friction calls to action that lead to the qualified inquiry form.
+
+- [x] **Refresh public-facing acquisition metadata and content.** Update crawler-visible title, description, social-preview content, initial HTML, navigation, footer, and brand language so search and shared links consistently promote Lucky CFO Advisory, fractional CFO advisory, CFO consulting, finance readiness, cash forecasting, and M&A readiness.
 
 - [x] **Create the conversion-focused public homepage.** Present The CFO Signal Room as a CFO-led advisory practice for leadership teams needing decision-ready finance. The homepage must establish the precise value proposition, senior-advisor positioning, credibility signals, and prominent invitations to request a confidential 25-minute Finance Readiness Conversation.
 
