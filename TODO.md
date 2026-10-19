@@ -1,5 +1,7 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [x] **Normalize the hero headline spacing.** Make the “Be ready when the opportunity shows up” headline use normal letter and word spacing while preserving its editorial font, sizing, color treatment, and responsive layout.
+
 - [ ] **Deliver booked-call requests to the firm inbox.** Send each successfully submitted CFO Readiness Call request to `mark@midatlanticcfo.com` through a verified transactional-email sender; make the prospect email the Reply-To address, keep the recipient server-side, and show success only after the email provider accepts the request.
 
 - [x] **Capture a prospect phone number.** Add an optional Phone number field to the CFO Readiness Call request form, optimize it for mobile number entry, and include the submitted value in the secure lead-notification details.
