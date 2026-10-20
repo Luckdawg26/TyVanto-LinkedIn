@@ -1,5 +1,17 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [x] **Rebuild the homepage around the “Prepared beats lucky” proposition.** Lead with Mark Lucky’s public-company CFO perspective, name the intended audience as small- and mid-cap public and private companies, use plain-English buyer problems, and make the primary action an accurate request for a confidential 25-minute CFO Readiness Call rather than implying instant calendar booking.
+
+- [x] **Build a credibility-first Mark profile while retaining placeholders.** Create a polished headshot placeholder and clearly marked selected-results placeholders for a future verified photograph, transaction count, and anonymized client outcomes; do not publish invented metrics, logos, testimonials, or unverified career claims.
+
+- [x] **Create a high-conversion acquisition path.** Add the three-question readiness check, CEO/finance-leader/board buyer paths, an event-driven “why now” section, a productized Fixed-fee Finance Diagnostic, a 90-day roadmap, and a qualified inquiry path that captures name, work email, company, role, phone, event, and non-confidential context.
+
+- [x] **Clarify the service offer and professional boundaries.** Present SEC reporting and audit readiness, fractional and interim CFO support, finance operations, board reporting, and financing/transaction readiness in plain English; explicitly distinguish internal readiness, diligence, and integration work from capital placement, buyer sourcing, transaction execution, broker-dealer, legal, tax, attest, and investment-adviser services.
+
+- [x] **Add original, premium editorial graphics.** Use distinct original visuals for the hero and finance-diagnostic sections, with a dark-emerald, antique-gold, public-company-grade editorial aesthetic; do not use a generated person in place of Mark’s future headshot.
+
+- [x] **Improve readability, mobile conversion, and discoverability.** Use normal letter and word spacing throughout; increase readable body/small-text sizing and contrast; make complex card layouts stack cleanly; provide crawler-visible homepage copy and commercial-intent metadata without guessing a canonical origin.
+
 - [x] **Normalize the hero headline spacing.** Make the “Be ready when the opportunity shows up” headline use normal letter and word spacing while preserving its editorial font, sizing, color treatment, and responsive layout.
 
 - [ ] **Deliver booked-call requests to the firm inbox.** Send each successfully submitted CFO Readiness Call request to `mark@midatlanticcfo.com` through a verified transactional-email sender; make the prospect email the Reply-To address, keep the recipient server-side, and show success only after the email provider accepts the request.

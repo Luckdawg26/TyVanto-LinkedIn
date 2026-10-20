@@ -16,11 +16,11 @@ const inquirySchema = z.object({
   role: z.string().trim().max(100).optional().default(""),
   phone: z.string().trim().max(40).optional().default(""),
   topic: z.enum([
-    "Close & reporting",
-    "Forecasting & cash",
-    "Fractional CFO leadership",
-    "Financing readiness",
-    "M&A / diligence / integration readiness",
+    "SEC filing or audit",
+    "Financing or lender process",
+    "Transaction or acquisition",
+    "Board reporting or cash pressure",
+    "Interim or fractional CFO coverage",
     "Other finance operating need",
   ]),
   message: z.string().trim().max(800).optional().default(""),
@@ -104,19 +104,18 @@ async function startServer() {
       `Company: ${compact(inquiry.company)}`,
       `Role: ${compact(inquiry.role) || "Not provided"}`,
       `Phone: ${compact(inquiry.phone) || "Not provided"}`,
-      `Topic: ${inquiry.topic}`,
+      `What is coming up: ${inquiry.topic}`,
       `Context: ${compact(inquiry.message) || "Not provided"}`,
     ].join("\n");
 
     try {
       await sendLeadEmail(inquiry, content);
     } catch (error) {
-      // Avoid exposing service internals or lead content to the visitor.
       console.error("Inquiry email delivery failed:", error instanceof Error ? error.message : "Unknown error");
       return res.status(503).json({ error: "The inquiry could not be delivered. Please try again shortly." });
     }
 
-    // This internal notification supplements, but does not replace, the inbox delivery.
+    // This internal notification supplements the confirmed inbox delivery.
     try {
       await notifyOwner(content);
     } catch (error) {
