@@ -1,5 +1,7 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [x] **Add the optimized founder headshot.** Create a professional edit of the supplied Mark Lucky photo with a sophisticated law-office background while preserving his identity, suit, pose, and natural appearance; replace the website portrait placeholder and add it to the customer-facing launch blueprint without inserting it into technical notes or the user-supplied PDF.
+
 - [x] **Replace the “Prepared beats lucky” positioning.** Use “Make the next decision easier to defend.” as the sharper public value proposition in the hero, footer, social metadata, and crawler-visible homepage copy while preserving Lucky CFO Advisory’s premium, public-company-grade voice.
 
 - [x] **Rebuild the homepage around the “Prepared beats lucky” proposition.** Lead with Mark Lucky’s public-company CFO perspective, name the intended audience as small- and mid-cap public and private companies, use plain-English buyer problems, and make the primary action an accurate request for a confidential 25-minute CFO Readiness Call rather than implying instant calendar booking.

@@ -22,6 +22,7 @@ import {
 const heroImage = "/manus-storage/lucky-cfo-hero-readiness_39fb4f3d.jpg";
 const diagnosticImage = "/manus-storage/lucky-cfo-diagnostic-system_ef0badb0.jpg";
 const logoMark = "/manus-storage/lucky-cfo-mark_8b5d859e.png";
+const markPortrait = "/manus-storage/mark-lucky-law-office-headshot_3e392a80.jpg";
 
 const readinessQuestions = [
   "Can you explain last month’s results through the three drivers that matter most—in plain English?",
@@ -205,10 +206,9 @@ export default function Home() {
             </div>
             <div className="hero-visual">
               <img src={heroImage} alt="Executive boardroom prepared for a consequential finance decision" />
-              <div className="portrait-placeholder" aria-label="Professional headshot placeholder for Mark Lucky">
-                <div className="portrait-placeholder-mark"><BrandMark /></div>
-                <span>Professional headshot</span>
-                <strong>Portrait of Mark Lucky to be added</strong>
+              <div className="founder-portrait-card">
+                <img src={markPortrait} alt="Mark Lucky, founder of Lucky CFO Advisory" />
+                <div><span>Mark Lucky</span><strong>Founder · Public-company CFO</strong></div>
               </div>
               <div className="hero-caption"><span>Prepare</span><span>Decide</span><span>Move</span></div>
             </div>
@@ -278,7 +278,13 @@ export default function Home() {
 
         <section className="about-section" id="about" aria-labelledby="about-title">
           <div className="section-frame about-layout">
-            <blockquote>“You don’t lose a raise in the pitch. You lose it two weeks later, in diligence.”</blockquote>
+            <div className="about-side">
+              <figure className="about-portrait">
+                <img src={markPortrait} alt="Mark Lucky in a law-office setting" loading="lazy" />
+                <figcaption><strong>Mark Lucky</strong><span>Founder, Lucky CFO Advisory</span></figcaption>
+              </figure>
+              <blockquote>“You don’t lose a raise in the pitch. You lose it two weeks later, in diligence.”</blockquote>
+            </div>
             <div className="about-copy">
               <p className="eyebrow"><span /> About Mark</p>
               <h2 id="about-title">CFO-level discipline for the work that needs to <i>hold up.</i></h2>
