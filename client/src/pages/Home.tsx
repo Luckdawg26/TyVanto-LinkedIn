@@ -190,7 +190,7 @@ export default function Home() {
           <div className="section-frame hero-layout">
             <div className="hero-copy">
               <p className="eyebrow"><span /> Fractional · interim · public-company CFO</p>
-              <h1>Prepared<br />beats <i>lucky.</i></h1>
+              <h1>Make the next<br />decision <i>easier to defend.</i></h1>
               <p className="hero-lead">Public-company CFO experience for small- and mid-cap companies, without the full-time CFO.</p>
               <p className="hero-body">I’m Mark Lucky. I bring senior finance leadership to the work that gets examined first: SEC filings, auditors, boards, cash, financing decisions, and transactions. Now I do that work for a limited number of companies at a time.</p>
               <div className="hero-actions">
@@ -323,7 +323,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="site-footer"><div className="section-frame footer-layout"><div className="footer-brand"><BrandMark /><span><strong>Lucky CFO</strong> Advisory</span></div><p>Prepared beats lucky.</p><p>Advisory services only. No capital placement, buyer sourcing, transaction execution, broker-dealer, legal, tax, attest, or investment-adviser services.</p><p>© {new Date().getFullYear()} Lucky CFO Advisory</p></div></footer>
+      <footer className="site-footer"><div className="section-frame footer-layout"><div className="footer-brand"><BrandMark /><span><strong>Lucky CFO</strong> Advisory</span></div><p>Make the next decision easier to defend.</p><p>Advisory services only. No capital placement, buyer sourcing, transaction execution, broker-dealer, legal, tax, attest, or investment-adviser services.</p><p>© {new Date().getFullYear()} Lucky CFO Advisory</p></div></footer>
     </div>
   );
 }
