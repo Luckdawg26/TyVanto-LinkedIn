@@ -219,7 +219,7 @@ export default function Home() {
           <div className="section-frame">
             <div className="section-heading centered-heading">
               <p className="eyebrow"><span /> The 3-question readiness check</p>
-              <h2 id="readiness-title">Could your numbers survive <i>the hard question</i> this week?</h2>
+              <h2 id="readiness-title">Could your numbers survive hard questions this week?</h2>
               <p>An audit, a financing process, a buyer, or a board will eventually test your finance function. These three questions show whether it is ready.</p>
             </div>
             <ol className="question-grid">
