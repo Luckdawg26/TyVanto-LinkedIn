@@ -79,6 +79,17 @@
 .hero-caption { position: absolute; z-index: 1; right: 1.3rem; bottom: 1.3rem; display: flex; gap: .35rem; }
 .hero-caption span { padding: .43rem .5rem; border: 1px solid rgba(247, 245, 235, .42); background: rgba(4, 26, 18, .54); color: var(--paper); font: .68rem/1 var(--mono); text-transform: uppercase; }
 
+.video-section { padding: clamp(5rem, 9vw, 8rem) 0; background: var(--ink); color: var(--paper); }
+.video-layout { display: grid; grid-template-columns: minmax(0, .76fr) minmax(420px, 1fr); gap: clamp(3rem, 8vw, 9rem); align-items: center; }
+.video-copy { max-width: 570px; }
+.video-copy .eyebrow { color: var(--gold-bright); }
+.video-copy h2 { max-width: 560px; font: 500 clamp(2.4rem, 4.4vw, 4.6rem)/1.04 var(--serif); }
+.video-copy > p:not(.eyebrow) { margin-top: 1.15rem; color: rgba(247, 245, 235, .82); font-size: 1.05rem; line-height: 1.7; }
+.video-copy .button { margin-top: 1.65rem; }
+.video-frame { overflow: hidden; border: 1px solid rgba(247, 245, 235, .24); background: #000; box-shadow: 20px 20px 0 rgba(195, 154, 66, .14); }
+.video-frame video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.video-note { padding: .78rem 1rem .85rem; color: var(--gold-bright); background: var(--ink-deep); font: .76rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: normal; word-spacing: normal; }
+
 .readiness-section { padding: clamp(5rem, 9vw, 8rem) 0; background: linear-gradient(115deg, var(--paper), var(--paper-deep)); }
 .section-heading { max-width: 790px; }
 .centered-heading { text-align: center; margin: 0 auto; }
@@ -246,7 +257,7 @@ h1, h2, h3 { font-kerning: normal; }
   .hero-layout { min-height: auto; grid-template-columns: 1fr; padding-top: 4.5rem; gap: 2.8rem; }.hero-copy h1 { font-size: clamp(3.5rem, 15vw, 5rem); }.hero-visual { min-height: 430px; height: 114vw; max-height: 580px; margin-left: 6vw; border-radius: 0 0 0 90px; }.founder-portrait-card { width: min(205px, 54%); }
   .credential-strip { grid-template-columns: 1fr; }.credential-strip div, .credential-strip div + div { min-height: auto; padding: .8rem 0; border-right: 0; border-bottom: 1px solid var(--line-light); }.credential-strip div:last-child { border-bottom: 0; }
   .question-grid, .buyer-grid, .services-grid, .brief-grid, .process-grid { grid-template-columns: 1fr; }.question-grid { margin-top: 2.2rem; }.question-grid li { min-height: auto; }.readiness-close { align-items: flex-start; flex-direction: column; }
-  .why-now-layout, .diagnostic-layout, .about-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.7rem; }.buyer-card { min-height: auto; }.services-grid { gap: 1px; }.service-card { min-height: auto; }.diagnostic-visual { min-height: 370px; }.process-grid li { min-height: auto; }.process-grid svg { margin-top: 1.5rem; }
+  .why-now-layout, .video-layout, .diagnostic-layout, .about-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.7rem; }.buyer-card { min-height: auto; }.services-grid { gap: 1px; }.service-card { min-height: auto; }.diagnostic-visual { min-height: 370px; }.process-grid li { min-height: auto; }.process-grid svg { margin-top: 1.5rem; }
   .linkedin-placeholder { align-items: flex-start; flex-direction: column; gap: .35rem; }.form-grid { grid-template-columns: 1fr; gap: 0; }.footer-layout { grid-template-columns: 1fr; gap: .75rem; }
 }
 

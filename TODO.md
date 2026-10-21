@@ -1,5 +1,7 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [x] **Embed the supplied CFO Readiness video.** Add the attached CFO Readiness video as a prominent, accessible, responsive homepage module immediately after the hero; retain its captions and audio, use visible controls and a meaningful poster image, and give visitors a clear path from the video to the confidential 25-minute CFO Readiness Call.
+
 - [x] **Refine the readiness-check headline.** Replace “Could your numbers survive the hard question this week?” with exactly “Could your numbers survive hard questions this week?” in the visible readiness-check heading and crawler-visible homepage content.
 
 - [x] **Add the optimized founder headshot.** Create a professional edit of the supplied Mark Lucky photo with a sophisticated law-office background while preserving his identity, suit, pose, and natural appearance; replace the website portrait placeholder and add it to the customer-facing launch blueprint without inserting it into technical notes or the user-supplied PDF.

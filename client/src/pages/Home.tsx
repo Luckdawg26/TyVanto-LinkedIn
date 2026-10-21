@@ -23,6 +23,8 @@ const heroImage = "/manus-storage/lucky-cfo-hero-readiness_39fb4f3d.jpg";
 const diagnosticImage = "/manus-storage/lucky-cfo-diagnostic-system_ef0badb0.jpg";
 const logoMark = "/manus-storage/lucky-cfo-mark_8b5d859e.png";
 const markPortrait = "/manus-storage/mark-lucky-law-office-headshot_3e392a80.jpg";
+const readinessVideo = "/manus-storage/lucky-cfo-readiness-video_64d167bd.mp4";
+const readinessVideoPoster = "/manus-storage/lucky-cfo-readiness-video-poster_a7cf822b.jpg";
 
 const readinessQuestions = [
   "Can you explain last month’s results through the three drivers that matter most—in plain English?",
@@ -211,6 +213,24 @@ export default function Home() {
                 <div><span>Mark Lucky</span><strong>Founder · Public-company CFO</strong></div>
               </div>
               <div className="hero-caption"><span>Prepare</span><span>Decide</span><span>Move</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="video-section" aria-labelledby="video-title">
+          <div className="section-frame video-layout">
+            <div className="video-copy">
+              <p className="eyebrow"><span /> Watch: CFO Readiness</p>
+              <h2 id="video-title">The work behind <i>better-prepared decisions.</i></h2>
+              <p>Mark Lucky explains how senior CFO leadership helps small- and mid-cap companies prepare their numbers, cash position, and finance story before a lender, buyer, auditor, or board asks the hard question.</p>
+              <a className="button button-primary" href="#contact">Request a 25-minute call <ArrowRight size={17} /></a>
+            </div>
+            <div className="video-frame">
+              <video controls playsInline preload="metadata" poster={readinessVideoPoster} aria-describedby="video-note">
+                <source src={readinessVideo} type="video/mp4" />
+                Your browser does not support embedded video. Please use the contact form to request a CFO Readiness Call.
+              </video>
+              <p className="video-note" id="video-note">1 minute 36 seconds · Captions included · Audio on</p>
             </div>
           </div>
         </section>
