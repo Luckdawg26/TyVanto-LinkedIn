@@ -1,5 +1,7 @@
 # Lucky CFO Advisory — Build Outcomes
 
+- [x] **Add the professional Calendly booking path.** Use `https://calendly.com/mark-luckycfoadvisory` for polished, prominent “Book a 25-minute call” links in navigation and high-intent CTAs, plus an appealing scheduling card in the contact section; preserve the inquiry form as a lower-pressure alternative for prospects who want to share context first.
+
 - [x] **Embed the supplied CFO Readiness video.** Add the attached CFO Readiness video as a prominent, accessible, responsive homepage module immediately after the hero; retain its captions and audio, use visible controls and a meaningful poster image, and give visitors a clear path from the video to the confidential 25-minute CFO Readiness Call.
 
 - [x] **Refine the readiness-check headline.** Replace “Could your numbers survive the hard question this week?” with exactly “Could your numbers survive hard questions this week?” in the visible readiness-check heading and crawler-visible homepage content.

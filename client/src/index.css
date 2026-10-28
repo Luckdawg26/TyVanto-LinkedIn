@@ -204,6 +204,11 @@
 .contact-layout { display: grid; grid-template-columns: minmax(0, .86fr) minmax(410px, .96fr); gap: clamp(3rem, 9vw, 10rem); }
 .contact-copy h2 { max-width: 560px; font: 500 clamp(2.45rem, 4.4vw, 4.55rem)/1.05 var(--serif); }
 .contact-copy > p:not(.eyebrow) { max-width: 570px; margin-top: 1.2rem; color: rgba(247, 245, 235, .78); font-size: 1.05rem; line-height: 1.7; }
+.schedule-card { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .9rem; max-width: 570px; margin-top: 1.75rem; padding: 1.05rem; border: 1px solid rgba(242, 206, 117, .48); border-left: 3px solid var(--gold-bright); background: rgba(247, 245, 235, .06); }
+.schedule-card > svg { margin-top: .16rem; color: var(--gold-bright); }
+.schedule-card strong { display: block; color: var(--paper); font: 500 1.3rem/1.2 var(--serif); }
+.schedule-card p { margin-top: .35rem; color: rgba(247, 245, 235, .74); font-size: .92rem; line-height: 1.5; }
+.schedule-card .button { margin-top: .9rem; }
 .contact-details { display: grid; gap: .45rem; margin-top: 1.6rem; }
 .contact-details a { color: var(--gold-bright); font-size: 1rem; font-weight: 700; }
 .contact-details span { color: rgba(247, 245, 235, .68); font-size: .94rem; }
@@ -211,6 +216,7 @@
 .contact-assurances span { display: flex; gap: .5rem; align-items: center; color: rgba(247, 245, 235, .78); font-size: .9rem; }
 .contact-assurances svg { color: var(--gold-bright); }
 .inquiry-form { padding: clamp(1.3rem, 3vw, 2rem); background: rgba(247, 245, 235, .04); border: 1px solid rgba(247, 245, 235, .2); }
+.form-intro { margin: 0 0 1.3rem; color: var(--gold-bright); font: .94rem/1.5 var(--serif); }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .inquiry-form label { display: grid; gap: .48rem; margin-bottom: 1rem; color: rgba(247, 245, 235, .92); font-size: .92rem; font-weight: 650; line-height: 1.35; }
 .inquiry-form label small { color: rgba(247, 245, 235, .66); font-weight: 400; }
