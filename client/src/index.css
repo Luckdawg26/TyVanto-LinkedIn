@@ -200,6 +200,16 @@
 .faq-list summary svg { flex: 0 0 auto; color: var(--gold); transition: transform .2s ease; }
 .faq-list details p { max-width: 720px; padding: 0 0 1.25rem; color: #50675d; font-size: .97rem; line-height: 1.65; }
 
+.booking-section { padding: clamp(5rem, 9vw, 8rem) 0; background: linear-gradient(115deg, var(--paper-deep), var(--paper)); }
+.booking-heading { max-width: 860px; }
+.booking-heading > p:not(.eyebrow) { max-width: 690px; margin-left: auto; margin-right: auto; }
+.calendly-frame { max-width: 1120px; min-height: 760px; margin: 3rem auto 0; overflow: hidden; border: 1px solid var(--line-dark); border-top: 3px solid var(--gold); background: #fff; box-shadow: 20px 20px 0 rgba(195, 154, 66, .13); }
+.calendly-frame iframe { display: block; width: 100%; min-height: 760px; border: 0; }
+.calendar-fallback { margin: 1.1rem auto 0; color: #466158; text-align: center; font-size: .91rem; line-height: 1.55; }
+.calendar-fallback a { color: var(--ink); border-bottom: 1px solid currentColor; font-weight: 750; }
+.booking-alternative { margin: 1.45rem auto 0; color: #466158; text-align: center; font-size: .96rem; line-height: 1.55; }
+.booking-alternative a { color: var(--ink); border-bottom: 1px solid currentColor; font-weight: 750; }
+
 .contact-section { padding: clamp(5rem, 10vw, 9rem) 0; background: var(--ink-deep); color: var(--paper); }
 .contact-layout { display: grid; grid-template-columns: minmax(0, .86fr) minmax(410px, .96fr); gap: clamp(3rem, 9vw, 10rem); }
 .contact-copy h2 { max-width: 560px; font: 500 clamp(2.45rem, 4.4vw, 4.55rem)/1.05 var(--serif); }
@@ -263,7 +273,7 @@ h1, h2, h3 { font-kerning: normal; }
   .hero-layout { min-height: auto; grid-template-columns: 1fr; padding-top: 4.5rem; gap: 2.8rem; }.hero-copy h1 { font-size: clamp(3.5rem, 15vw, 5rem); }.hero-visual { min-height: 430px; height: 114vw; max-height: 580px; margin-left: 6vw; border-radius: 0 0 0 90px; }.founder-portrait-card { width: min(205px, 54%); }
   .credential-strip { grid-template-columns: 1fr; }.credential-strip div, .credential-strip div + div { min-height: auto; padding: .8rem 0; border-right: 0; border-bottom: 1px solid var(--line-light); }.credential-strip div:last-child { border-bottom: 0; }
   .question-grid, .buyer-grid, .services-grid, .brief-grid, .process-grid { grid-template-columns: 1fr; }.question-grid { margin-top: 2.2rem; }.question-grid li { min-height: auto; }.readiness-close { align-items: flex-start; flex-direction: column; }
-  .why-now-layout, .video-layout, .diagnostic-layout, .about-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.7rem; }.buyer-card { min-height: auto; }.services-grid { gap: 1px; }.service-card { min-height: auto; }.diagnostic-visual { min-height: 370px; }.process-grid li { min-height: auto; }.process-grid svg { margin-top: 1.5rem; }
+  .why-now-layout, .video-layout, .diagnostic-layout, .about-layout, .faq-layout, .contact-layout { grid-template-columns: 1fr; gap: 2.7rem; }.buyer-card { min-height: auto; }.services-grid { gap: 1px; }.service-card { min-height: auto; }.diagnostic-visual { min-height: 370px; }.process-grid li { min-height: auto; }.process-grid svg { margin-top: 1.5rem; }.calendly-frame, .calendly-frame iframe { min-height: 900px; }
   .linkedin-placeholder { align-items: flex-start; flex-direction: column; gap: .35rem; }.form-grid { grid-template-columns: 1fr; gap: 0; }.footer-layout { grid-template-columns: 1fr; gap: .75rem; }
 }
 
