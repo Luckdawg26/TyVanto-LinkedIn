@@ -1,6 +1,6 @@
 # Lucky CFO Advisory — Build Outcomes
 
-- [x] **Add the professional Calendly booking path.** Use `https://calendly.com/mark-luckycfoadvisory` for polished, prominent “Book a 25-minute call” links in navigation and high-intent CTAs, plus an appealing scheduling card in the contact section; preserve the inquiry form as a lower-pressure alternative for prospects who want to share context first.
+- [x] **Direct every booking CTA to guest time selection.** Use `https://calendly.com/mark-luckycfoadvisory/keizan-one-on-one` so navigation, high-intent CTAs, and the contact schedule card take a visitor directly to the Calendly event calendar and available meeting times rather than Mark’s general scheduling profile; preserve the inquiry form as a lower-pressure alternative for prospects who want to share context first.
 
 - [x] **Embed the supplied CFO Readiness video.** Add the attached CFO Readiness video as a prominent, accessible, responsive homepage module immediately after the hero; retain its captions and audio, use visible controls and a meaningful poster image, and give visitors a clear path from the video to the confidential 25-minute CFO Readiness Call.
 

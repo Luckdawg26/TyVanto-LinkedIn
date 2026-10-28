@@ -25,7 +25,7 @@ const logoMark = "/manus-storage/lucky-cfo-mark_8b5d859e.png";
 const markPortrait = "/manus-storage/mark-lucky-law-office-headshot_3e392a80.jpg";
 const readinessVideo = "/manus-storage/lucky-cfo-readiness-video_64d167bd.mp4";
 const readinessVideoPoster = "/manus-storage/lucky-cfo-readiness-video-poster_a7cf822b.jpg";
-const calendlyUrl = "https://calendly.com/mark-luckycfoadvisory";
+const calendlyUrl = "https://calendly.com/mark-luckycfoadvisory/keizan-one-on-one";
 
 const readinessQuestions = [
   "Can you explain last month’s results through the three drivers that matter most—in plain English?",
@@ -185,7 +185,7 @@ export default function Home() {
           <a href="#services" onClick={closeMenu}>Services</a>
           <a href="#about" onClick={closeMenu}>About Mark</a>
           <a href="#readiness" onClick={closeMenu}>Readiness check</a>
-          <a className="nav-cta" href={calendlyUrl} target="_blank" rel="noreferrer" onClick={closeMenu}>Book a call <CalendarDays size={15} /></a>
+          <a className="nav-cta" href={calendlyUrl} onClick={closeMenu}>Book a call <CalendarDays size={15} /></a>
         </nav>
       </header>
 
@@ -198,7 +198,7 @@ export default function Home() {
               <p className="hero-lead">Public-company CFO experience for small- and mid-cap companies, without the full-time CFO.</p>
               <p className="hero-body">I’m Mark Lucky. I bring senior finance leadership to the work that gets examined first: SEC filings, auditors, boards, cash, financing decisions, and transactions. Now I do that work for a limited number of companies at a time.</p>
               <div className="hero-actions">
-                <a className="button button-primary" href={calendlyUrl} target="_blank" rel="noreferrer">Book a 25-minute call <CalendarDays size={17} /></a>
+                <a className="button button-primary" href={calendlyUrl}>Book a 25-minute call <CalendarDays size={17} /></a>
                 <a className="text-link" href="#readiness">See the 3 questions lenders and boards ask <ChevronRight size={16} /></a>
               </div>
               <dl className="credential-strip" aria-label="Practice credentials">
@@ -224,7 +224,7 @@ export default function Home() {
               <p className="eyebrow"><span /> Watch: CFO Readiness</p>
               <h2 id="video-title">The work behind <i>better-prepared decisions.</i></h2>
               <p>Mark Lucky explains how senior CFO leadership helps small- and mid-cap companies prepare their numbers, cash position, and finance story before a lender, buyer, auditor, or board asks the hard question.</p>
-              <a className="button button-primary" href={calendlyUrl} target="_blank" rel="noreferrer">Book a 25-minute call <CalendarDays size={17} /></a>
+              <a className="button button-primary" href={calendlyUrl}>Book a 25-minute call <CalendarDays size={17} /></a>
             </div>
             <div className="video-frame">
               <video controls playsInline preload="metadata" poster={readinessVideoPoster} aria-describedby="video-note">
@@ -246,7 +246,7 @@ export default function Home() {
             <ol className="question-grid">
               {readinessQuestions.map((question, index) => <li key={question}><span>0{index + 1}</span><p>{question}</p></li>)}
             </ol>
-            <div className="readiness-close"><p>If any answer is “no” or “not sure,” that is the conversation to have before someone else asks.</p><a href={calendlyUrl} target="_blank" rel="noreferrer" className="inline-cta">Book the readiness call <ArrowRight size={16} /></a></div>
+            <div className="readiness-close"><p>If any answer is “no” or “not sure,” that is the conversation to have before someone else asks.</p><a href={calendlyUrl} className="inline-cta">Book the readiness call <ArrowRight size={16} /></a></div>
           </div>
         </section>
 
@@ -292,7 +292,7 @@ export default function Home() {
               <p>For companies approaching a filing, audit, financing process, transaction, board-pressure point, or CFO transition, the diagnostic identifies the finance work worth doing first.</p>
               <ul className="diagnostic-list"><li><Check size={17} />Close, reporting, cash forecast, controls, and capacity</li><li><Check size={17} />Readiness risks and the evidence needed for the next decision</li><li><Check size={17} />A prioritized 90-day action plan with clear ownership</li></ul>
               <p className="diagnostic-note">Fixed fee and defined scope after the readiness call. No generic assessment theater.</p>
-              <a className="button button-primary" href={calendlyUrl} target="_blank" rel="noreferrer">Book the readiness call <CalendarDays size={17} /></a>
+              <a className="button button-primary" href={calendlyUrl}>Book the readiness call <CalendarDays size={17} /></a>
             </div>
           </div>
         </section>
@@ -337,7 +337,7 @@ export default function Home() {
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
           <div className="section-frame contact-layout">
-            <div className="contact-copy"><p className="eyebrow"><span /> Request a call</p><h2 id="contact-title">Facing a filing, a raise, an audit, or a board that wants <i>real numbers?</i></h2><p>Choose a time for a confidential 25-minute CFO Readiness Call, or use the brief form if you would rather share context first.</p><div className="schedule-card"><CalendarDays size={27} aria-hidden="true" /><div><strong>Choose a time that works for you.</strong><p>No back-and-forth. No confidential deal details required.</p><a className="button button-primary" href={calendlyUrl} target="_blank" rel="noreferrer">Open the calendar <ArrowUpRight size={17} /></a></div></div><div className="contact-details"><a href="mailto:mark@midatlanticcfo.com">mark@midatlanticcfo.com</a><span>Working with clients nationwide</span></div><div className="contact-assurances"><span><LockKeyhole size={17} /> No confidential deal details requested</span><span><ShieldCheck size={17} /> No placement or finder activity</span></div></div>
+            <div className="contact-copy"><p className="eyebrow"><span /> Request a call</p><h2 id="contact-title">Facing a filing, a raise, an audit, or a board that wants <i>real numbers?</i></h2><p>Choose a time for a confidential 25-minute CFO Readiness Call, or use the brief form if you would rather share context first.</p><div className="schedule-card"><CalendarDays size={27} aria-hidden="true" /><div><strong>Choose a time that works for you.</strong><p>Go straight to the live calendar—no back-and-forth or confidential deal details required.</p><a className="button button-primary" href={calendlyUrl}>Choose a meeting time <ArrowUpRight size={17} /></a></div></div><div className="contact-details"><a href="mailto:mark@midatlanticcfo.com">mark@midatlanticcfo.com</a><span>Working with clients nationwide</span></div><div className="contact-assurances"><span><LockKeyhole size={17} /> No confidential deal details requested</span><span><ShieldCheck size={17} /> No placement or finder activity</span></div></div>
             <form className="inquiry-form" onSubmit={handleInquiry}>
               <p className="form-intro">Prefer to start in writing? Share a little non-confidential context.</p>
               <div className="form-grid"><label>Full name<input name="name" autoComplete="name" required placeholder="Your name" /></label><label>Work email<input name="email" type="email" autoComplete="email" required placeholder="you@company.com" /></label><label>Company<input name="company" autoComplete="organization" required placeholder="Company name" /></label><label>Role<input name="role" autoComplete="organization-title" placeholder="CEO, CFO, board member…" /></label><label className="phone-field">Phone number <small>Optional</small><input name="phone" type="tel" autoComplete="tel" inputMode="tel" maxLength={40} placeholder="(555) 123-4567" /></label></div>
